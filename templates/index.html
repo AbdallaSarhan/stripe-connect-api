@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Connect Example</title>
+</head>
+<body>
+    <h1>Stripe Connect Example</h1>
+    
+    <form id="payment-form">
+        <div id="card-element"></div>
+        <button id="submit">
+            <div class="spinner" id="spinner"></div>
+            <span id="button-text">Pay</span>
+        </button>
+        <p id="payment-status" role="alert"></p>
+    </form>
+
+    <script src="https://js.stripe.com/v3/"></script> 
+    <script src="{{ url_for('static', filename='client.js') }}"></script> 
+</body>
+</html>
